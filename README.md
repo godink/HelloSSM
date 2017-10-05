@@ -16,7 +16,7 @@
 
 配置好以下开发工具
 
-    JDK: 1.7
+    JDK: 1.8
     Maven:3.1.1
     Tomcat：7.0.65
     Mysql：5.5.20
@@ -29,7 +29,7 @@ Fork项目Clone到本地
 ### 1.本地安装好mysql数据库，使用自带的`test`数据库，或者新建数据库
 
     jdbc.driverClassName=com.mysql.jdbc.Driver
-    jdbc.url=jdbc:mysql://localhost:3307/test
+    jdbc.url=jdbc:mysql://localhost:3306/hellossm
     jdbc.username=root
     jdbc.password=root
 
@@ -74,4 +74,4 @@ maven的设置选项 `use Maven Output Directories` 要勾选上
 直接在`RestFulClientTest`类上点击Junit的按钮进行接口测试
 
 ## 五、页面管理
-在任务栏输入`http://localhost:8081/HelloSSM/user/userManage`,回车出现用户管理的简单页面，一个简单的SSM项目环境就搭建好了。
+在任务栏输入`http://localhost:13080/user/userManage`,回车出现用户管理的简单页面，一个简单的SSM项目环境就搭建好了。

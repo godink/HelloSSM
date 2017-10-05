@@ -70,6 +70,6 @@
 
 </div>
 
-<script src="<%=basePath%>/static/js/user.js" type="text/javascript"></script>
+<script src="<%=basePath%>/resources/js/user.js" type="text/javascript"></script>
 </body>
 </html>

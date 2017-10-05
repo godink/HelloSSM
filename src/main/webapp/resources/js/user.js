@@ -7,7 +7,7 @@ new Vue({
     ready:function(){
         var self = this;
         $.ajax({
-            url: '/HelloSSM/rest/user/',
+            url: '/rest/user/',
             method: 'GET',
             statusCode:{
                 404: function () {
@@ -22,7 +22,7 @@ new Vue({
     methods:{
         deleteUser:function(id){
             $.ajax({
-                url: '/HelloSSM/rest/user/'+id,
+                url: '/rest/user/'+id,
                 method: 'DELETE',
                 statusCode:{
                     404: function () {
@@ -51,7 +51,7 @@ new Vue({
             var param = {"id":this.id, "userName":this.userName,"password":this.userName};
             console.log(param);
             $.ajax({
-                url: '/HelloSSM/rest/user/',
+                url: '/rest/user/',
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
